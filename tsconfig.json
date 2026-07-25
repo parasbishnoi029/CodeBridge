@@ -1,4 +1,3 @@
-cat << 'EOF' > tsconfig.json
 {
   "compilerOptions": {
     "module": "commonjs",
@@ -6,7 +5,7 @@ cat << 'EOF' > tsconfig.json
     "outDir": "out",
     "lib": ["ES2020"],
     "sourceMap": true,
-    "rootDir": "src",
+    "rootDir": "./src",
     "strict": true
   },
   "exclude": [
@@ -14,4 +13,3 @@ cat << 'EOF' > tsconfig.json
     ".vscode-test"
   ]
 }
-EOF

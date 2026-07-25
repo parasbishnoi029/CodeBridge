@@ -1,23 +1,33 @@
-"contributes": {
+{
+  "name": "codebridge",
+  "displayName": "CodeBridge",
+  "description": "AI legacy code translator",
+  "version": "0.0.1",
+  "publisher": "paras",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "main": "./out/extension.js",
+  "contributes": {
     "commands": [
       {
         "command": "codebridge.translateCode",
         "title": "CodeBridge: Translate Legacy Code"
       }
     ]
-  }
-{
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
   "dependencies": {
-    "openai": "^6.49.0"
+    "openai": "^4.0.0"
+  },
+    
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "18.x",
+    "typescript": "^5.1.3"
   }
 }
-{
-  "name": "codebridge",
-  "displayName": "CodeBridge",
-  "description": "AI legacy code translator",
-  "version": "0.0.1",
-  "publisher": "paras", 
-  "engines": {
-    "vscode": "^1.80.0"
-  },
-

@@ -1,3 +1,16 @@
+"contributes": {
+    "commands": [
+      {
+        "command": "codebridge.translateCode",
+        "title": "CodeBridge: Translate Legacy Code"
+      }
+    ]
+  }
+{
+  "dependencies": {
+    "openai": "^6.49.0"
+  }
+}
 {
   "name": "codebridge",
   "displayName": "CodeBridge",

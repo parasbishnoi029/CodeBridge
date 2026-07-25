@@ -1,5 +1,10 @@
 {
-  "dependencies": {
-    "openai": "^6.49.0"
-  }
-}
+  "name": "codebridge",
+  "displayName": "CodeBridge",
+  "description": "AI legacy code translator",
+  "version": "0.0.1",
+  "publisher": "paras", 
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  // ... rest of your file
